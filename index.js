@@ -4,8 +4,12 @@ const nodeMailer = require('nodemailer');
 const app = express();
 cron.schedule("* * * * * *", function () {
     console.log("Running Cron Job");
+<<<<<<< HEAD
     console.log("this is check");
     
+=======
+    console.log("shakti");
+>>>>>>> 8fd2b4b4e2de8eb341bad8eb84faa510ccf131a1
     let transporter = nodeMailer.createTransport({
         host: 'smtp.ethereal.email',
         port: 587,
